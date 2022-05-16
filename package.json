@@ -1,0 +1,70 @@
+{
+	"name": "eslinkv-hangran",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint",
+		"submit": "esp submit",
+		"commit": "git add .&&git cz"
+	},
+	"dependencies": {
+		"@babel/runtime-corejs3": "^7.13.10",
+		"@eslinkv/core": "^1.1.2",
+		"@eslinkv/vue2": "^1.1.2",
+		"axios": "^0.21.1",
+		"core-js": "^3.6.5",
+		"date-fns": "^2.21.1",
+		"eslinkv-sdk": "^1.1.4",
+		"portal-vue": "^2.1.7",
+		"swiper": "^5.4.5",
+		"v-viewer": "^1.6.3",
+		"view-design": "^4.5.0",
+		"vue": "^2.6.12",
+		"vue-awesome-swiper": "^4.1.1",
+		"vue-class-component": "^7.2.3",
+		"vue-property-decorator": "^9.1.2",
+		"vue-seamless-scroll": "^1.1.21",
+		"vue-video-player": "^5.0.2"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^9.1.2",
+		"@commitlint/config-conventional": "^9.1.2",
+		"@prettier/plugin-pug": "^1.13.5",
+		"@typescript-eslint/eslint-plugin": "^4.21.0",
+		"@typescript-eslint/parser": "^4.21.0",
+		"@vue/cli-plugin-babel": "~4.5.0",
+		"@vue/cli-plugin-eslint": "~4.5.0",
+		"@vue/cli-plugin-typescript": "~4.5.0",
+		"@vue/cli-service": "~4.5.0",
+		"@vue/eslint-config-prettier": "^6.0.0",
+		"@vue/eslint-config-typescript": "^7.0.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^7.23.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-vue": "^7.8.0",
+		"husky": "^4.3.8",
+		"lint-staged": "^10.5.4",
+		"prettier": "^2.2.1",
+		"pug": "^3.0.2",
+		"pug-plain-loader": "^1.1.0",
+		"sass": "^1.26.5",
+		"sass-loader": "^8.0.2",
+		"typescript": "^4.1.6",
+		"vue-template-compiler": "^2.6.12"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "lint-staged"
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"_customHasUsedEsStandard": true,
+	"lint-staged": {}
+}
